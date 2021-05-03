@@ -3,8 +3,8 @@
 // Creare una funzione per capire se la parola inserita è palindroma
 
 
-
 // Chiedere all'utente di inserire una parola
+
 // parola richiesta
 var parolaInserita = prompt("inserisci una parola");
 console.log("parola inserita: ",parolaInserita);

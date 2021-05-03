@@ -6,7 +6,6 @@
 // Dichiariamo chi ha vinto.
 
 
-
 // L'utente sceglie pari o dispari e inserisce un numero da 1 a 5.
 
 // utente sceglie pari o dispari
@@ -16,7 +15,7 @@ do {
     pariOdispari = prompt("scegli pari o dispari");
 }
 
-while(pariOdispari != "pari" && pariOdispari !="dispari" )
+while(pariOdispari != "pari" && pariOdispari !="dispari");
 
 // controllo scelta
 console.log("scelta utente: ", pariOdispari);
@@ -39,6 +38,7 @@ console.log("utente: ", numeroInseritoUtente);
 function numeroPc() {
 
     var numero = Math.floor(Math.random() * 5) + 1;
+    // controllo numero pc
     console.log("pc: ", numero );
     return numero ;
     
