@@ -5,15 +5,31 @@
 // Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione)
 // Dichiariamo chi ha vinto.
 
+
+
 // L'utente sceglie pari o dispari e inserisce un numero da 1 a 5.
 
 // utente sceglie pari o dispari
-var pariOdispari = prompt("scegli pari o dispari")
+var pariOdispari;
+
+do {
+    pariOdispari = prompt("scegli pari o dispari");
+}
+
+while(pariOdispari != "pari" && pariOdispari !="dispari" )
+
 // controllo scelta
 console.log("scelta utente: ", pariOdispari);
 
 // utente un numero da 1 a 5
-var numeroInseritoUtente = parseInt(prompt("scegli un numero da 1 a 5"));
+var numeroInseritoUtente; 
+
+do {
+    numeroInseritoUtente = parseInt(prompt("scegli un numero da 1 a 5"));
+}
+
+while(numeroInseritoUtente < 1  || numeroInseritoUtente > 5 );
+
 // controllo scelta
 console.log("utente: ", numeroInseritoUtente);
 
