@@ -10,17 +10,18 @@
 // utente sceglie pari o dispari
 var pariOdispari = prompt("scegli pari o dispari")
 // controllo scelta
-console.log("scelta utente: ",pariOdispari);
+console.log("scelta utente: ", pariOdispari);
 
 // utente un numero da 1 a 5
 var numeroInseritoUtente = parseInt(prompt("scegli un numero da 1 a 5"));
 // controllo scelta
-console.log("utente: ",numeroInseritoUtente);
+console.log("utente: ", numeroInseritoUtente);
 
 // Generiamo un numero random (sempre da 1 a 5) per il computer (usando una funzione).
 
 // funzione per generare numero pc
 function numeroPc() {
+
     var numero = Math.floor(Math.random() * 5) + 1;
     console.log("pc: ", numero );
     return numero ;
@@ -31,7 +32,7 @@ function numeroPc() {
 
 // somma numero utente e numero pc
 var sommaUtentePc = numeroPc() + numeroInseritoUtente;
-console.log("somma numeri: ",sommaUtentePc);
+console.log("somma numeri: ", sommaUtentePc);
 
 // Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione)
 
