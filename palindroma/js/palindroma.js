@@ -16,17 +16,12 @@ controlloPalindroma(parolaInserita);
 // funzione controllo parola palindroma
 function controlloPalindroma(parolaDaControllare) {
 
-    // parola divisa in lettere in un array restituito come stringa 
-    var parolaDivisa = parolaDaControllare.split("").join();
-    // controllo parola divisa
-    console.log("parola divisa in lettere per confronto: ",parolaDivisa);
-
     // parola invertita divisa in lettere in un array restituito come stringa
-    var parolaInvertita = parolaInserita.split("").reverse().join();
+    var parolaInvertita = parolaInserita.split("").reverse().join("");
     // controllo parola invertita
-    console.log("parola invertita divisa in lettere per confronto: ",parolaInvertita);
+    console.log("parola invertita",parolaInvertita);
     // se la parola inserità è uguale a sè stessa invertita come ordine, è palindroma
-    if(parolaDivisa == parolaInvertita) {
+    if(parolaDaControllare == parolaInvertita) {
 
         console.log("è palindroma");
 
