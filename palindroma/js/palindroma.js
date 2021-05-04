@@ -17,7 +17,7 @@ controlloPalindroma(parolaInserita);
 function controlloPalindroma(parolaDaControllare) {
 
     // parola invertita divisa in lettere in un array restituito come stringa
-    var parolaInvertita = parolaInserita.split("").reverse().join("");
+    var parolaInvertita = parolaDaControllare.split("").reverse().join("");
     // controllo parola invertita
     console.log("parola invertita",parolaInvertita);
     // se la parola inserità è uguale a sè stessa invertita come ordine, è palindroma
