@@ -9,18 +9,18 @@
 // L'utente sceglie pari o dispari e inserisce un numero da 1 a 5.
 
 // utente sceglie pari o dispari
-var pariOdispari;
+var sceltaUtente;
 
 do {
-    pariOdispari = prompt("scegli pari o dispari");
+    sceltaUtente = prompt("scegli pari o dispari");
 }
 
-while(pariOdispari != "pari" && pariOdispari !="dispari");
+while(sceltaUtente != "pari" && sceltaUtente !="dispari");
 
 // controllo scelta
-console.log("scelta utente: ", pariOdispari);
+console.log("scelta utente: ", sceltaUtente);
 
-// utente un numero da 1 a 5
+// numero utente da 1 a 5
 var numeroInseritoUtente; 
 
 do {
@@ -37,11 +37,10 @@ console.log("utente: ", numeroInseritoUtente);
 // funzione per generare numero pc
 function numeroPc() {
 
-    var numero = Math.floor(Math.random() * 5) + 1;
+    var numeroCasualePc = Math.floor(Math.random() * 5) + 1;
     // controllo numero pc
-    console.log("pc: ", numero );
-    return numero ;
-    
+    console.log("pc: ", numeroCasualePc );
+    return numeroCasualePc;
 }
 
 // Sommiamo i due numeri
@@ -56,23 +55,21 @@ console.log("somma numeri: ", sommaUtentePc);
 function controlloNumero(numeroDaControllare) {
 
     if(numeroDaControllare % 2 == 0){
-        return "il numero è pari";
+        return "pari";
     } else {
-        return "il numero è dispari";
+        return "dispari";
     }
 }
+
+var controllo = (controlloNumero(sommaUtentePc));
 
 // controllo se il numero è pari o dispari
 console.log(controlloNumero(sommaUtentePc));
 
 // Dichiariamo chi ha vinto.
 
-if (pariOdispari == "pari" && sommaUtentePc % 2 == 0) {
-    console.log("ha vinto il giocatore col numero pari");
-} else if (sommaUtentePc % 2 == 0) {
-    console.log("ha vinto il pc col numero pari");
-} else if (pariOdispari == "dispari" && sommaUtentePc % 2 == 1) {
-    console.log("ha vinto il giocatore col numero dispari");
-}  else {
-    console.log("ha vinto il pc col numero dispari");
+if (sceltaUtente == controllo){
+    console.log("Ha vinto l'utente")
+} else {
+    console.log("Ha vinto il pc");
 }
