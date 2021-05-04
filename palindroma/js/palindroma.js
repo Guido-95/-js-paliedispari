@@ -13,21 +13,22 @@ controlloPalindroma(parolaInserita);
 
 // Creare una funzione per capire se la parola inserita è palindroma
 
-// funzione controllo parola palindroma
 function controlloPalindroma(parolaDaControllare) {
 
-    // parola invertita divisa in lettere in un array restituito come stringa
+    // parola divisa in lettere in un array invertito restituito come stringa
     var parolaInvertita = parolaDaControllare.split("").reverse().join("");
+
     // controllo parola invertita
     console.log("parola invertita",parolaInvertita);
-    // se la parola inserità è uguale a sè stessa invertita come ordine, è palindroma
+
+    // se la parola inserità è uguale a sè stessa al contrario, è palindroma altrimento no
     if(parolaDaControllare == parolaInvertita) {
 
-        console.log("è palindroma");
+        console.log("La parola è palindroma");
 
     } else {
 
-        console.log("non è palindroma");
+        console.log("La parola non è palindroma");
 
     }
 
