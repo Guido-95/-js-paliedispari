@@ -11,34 +11,36 @@
 // utente sceglie pari o dispari
 var sceltaUtente;
 
+// chiede almeno una volta
 do {
     sceltaUtente = prompt("scegli pari o dispari");
 }
-
+// controllo inserimento dati
 while(sceltaUtente != "pari" && sceltaUtente !="dispari");
 
-// controllo scelta
+// stampa scelta
 console.log("scelta utente: ", sceltaUtente);
 
 // numero utente da 1 a 5
 var numeroInseritoUtente; 
 
+// chiede almeno una volta
 do {
     numeroInseritoUtente = parseInt(prompt("scegli un numero da 1 a 5"));
 }
-
+// controllo inserimento dati
 while(numeroInseritoUtente < 1  || numeroInseritoUtente > 5 );
 
-// controllo scelta
+// stampa scelta
 console.log("utente: ", numeroInseritoUtente);
 
 // Generiamo un numero random (sempre da 1 a 5) per il computer (usando una funzione).
 
 // funzione per generare numero pc
 function numeroPc() {
-
+    // numero casuale da 1 a 5
     var numeroCasualePc = Math.floor(Math.random() * 5) + 1;
-    // controllo numero pc
+    // stampa numero pc
     console.log("pc: ", numeroCasualePc );
     return numeroCasualePc;
 }
@@ -47,6 +49,7 @@ function numeroPc() {
 
 // somma numero utente e numero pc
 var sommaUtentePc = numeroPc() + numeroInseritoUtente;
+// stampa somma numero utente e numero pc
 console.log("somma numeri: ", sommaUtentePc);
 
 // Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione)
@@ -63,7 +66,7 @@ function controlloNumero(numeroDaControllare) {
 
 var controllo = (controlloNumero(sommaUtentePc));
 
-// controllo se il numero è pari o dispari
+// stampa se è pari o dispari
 console.log(controlloNumero(sommaUtentePc));
 
 // Dichiariamo chi ha vinto.
